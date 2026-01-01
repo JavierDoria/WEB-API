@@ -78,3 +78,4 @@ C:\Users\jjjja\Desktop\c#\ConciertoVentas\ConciertoVentas\obj\Debug\net8.0\rjims
 C:\Users\jjjja\Desktop\c#\ConciertoVentas\ConciertoVentas\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\jjjja\Desktop\c#\ConciertoVentas\ConciertoVentas\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\Users\jjjja\Desktop\c#\ConciertoVentas\ConciertoVentas\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\jjjja\Desktop\c#\ConciertoVentas\ConciertoVentas\obj\Debug\net8.0\ConciertoVentas.sourcelink.json

@@ -8,14 +8,14 @@ namespace ConciertoVentas.Controllers
 {
     [ApiController]
     [Route("Cliente")]
-    public class ClienteController : Controller
+    public class ClienteController : ControllerBase
     {
 
         private readonly string cadena = "server=DESKTOP-QDE61J8;database=ConciertoVentas;User ID=sa;Password=123456;Integrated security=true;TrustServerCertificate=true;";
 
 
         [HttpGet("/Obtener")]
-        public List<Cliente> ListadoClientes()
+        public ActionResult<List<Cliente>> ListadoClientes()
         {
             List<Cliente> listadoBoleta = new List<Cliente>();
             SqlConnection cn = new SqlConnection(cadena);
@@ -37,9 +37,9 @@ namespace ConciertoVentas.Controllers
         }
 
         [HttpPost("/Guardar")]
-        public int GuardarCliente(Cliente cli)
+        public ActionResult GuardarCliente(Cliente cli)
         {
-            int filasAfectadas = 0;
+            int filasAfectadas=0;
             SqlConnection cn = new SqlConnection(cadena);
             cn.Open();
             SqlCommand comando = new SqlCommand("insert into  Cliente (nombre, apellido, dni, correo)  values (@nombre, @apellido, @dni, @correo) ", cn);
@@ -50,12 +50,12 @@ namespace ConciertoVentas.Controllers
             comando.Parameters.AddWithValue("@correo",cli.Correo);
             filasAfectadas = comando.ExecuteNonQuery();
             cn.Close();
-            return filasAfectadas;
+            return Ok( filasAfectadas);
         }
 
 
         [HttpDelete("/Eliminar")]
-        public int EliminarCliente(int id)
+        public ActionResult EliminarCliente(int id)
         {
             int filasAfectadas = 0;
             SqlConnection cn = new SqlConnection(cadena);
@@ -66,10 +66,10 @@ namespace ConciertoVentas.Controllers
             filasAfectadas = comando.ExecuteNonQuery();
             cn.Close();
 
-            return filasAfectadas;
+            return Ok(filasAfectadas);
         }
         [HttpPut("/Actualizar")]
-        public int ActualizarCliente(Cliente cliente)
+        public ActionResult ActualizarCliente(Cliente cliente)
         {
             int filasAfectadas = 0;
             List<Cliente> listadoBoleta = new List<Cliente>();
@@ -84,7 +84,7 @@ namespace ConciertoVentas.Controllers
             comando.Parameters.AddWithValue("@correo", cliente.Correo);
             filasAfectadas = comando.ExecuteNonQuery();
             cn.Close();
-            return filasAfectadas;
+            return Ok(filasAfectadas);
         }
     }
 }

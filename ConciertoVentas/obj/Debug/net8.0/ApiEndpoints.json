@@ -2,7 +2,7 @@
   {
     "ContainingType": "ConciertoVentas.Controllers.ClienteController",
     "Method": "ActualizarCliente",
-    "RelativePath": "actualizar",
+    "RelativePath": "Actualizar",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -13,29 +13,19 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Int32",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "ConciertoVentas.Controllers.ClienteController",
-    "Method": "ListadoClientes",
-    "RelativePath": "Cliente",
+    "ContainingType": "ConciertoVentas.Controllers.BoletaController",
+    "Method": "ObtenerBoleta",
+    "RelativePath": "api/boleta",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[VentasConcierto.Models.Cliente, ConciertoVentas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[VentasConcierto.Models.Boleta, ConciertoVentas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,22 +36,122 @@
     ]
   },
   {
-    "ContainingType": "ConciertoVentas.Controllers.ClienteController",
-    "Method": "GuardarCliente",
-    "RelativePath": "Cliente",
+    "ContainingType": "ConciertoVentas.Controllers.BoletaController",
+    "Method": "GuardarBoleta",
+    "RelativePath": "api/boleta",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cli",
-        "Type": "VentasConcierto.Models.Cliente",
+        "Name": "request",
+        "Type": "VentasConcierto.Models.Boleta",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.BoletaController",
+    "Method": "EliminarBoleta",
+    "RelativePath": "api/boleta/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.BoletaController",
+    "Method": "ActualizarBoleta",
+    "RelativePath": "api/boleta/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "boleta",
+        "Type": "VentasConcierto.Models.Boleta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.SedeController",
+    "Method": "ActualizarSede",
+    "RelativePath": "api/sedes/Actualizar{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "sede",
+        "Type": "VentasConcierto.Models.Sede",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.SedeController",
+    "Method": "EliminarSede",
+    "RelativePath": "api/sedes/Eliminar{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.SedeController",
+    "Method": "GuardarSede",
+    "RelativePath": "api/sedes/Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sede",
+        "Type": "VentasConcierto.Models.Sede",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.SedeController",
+    "Method": "ObtenerSedes",
+    "RelativePath": "api/sedes/Obtener",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Int32",
+        "Type": "System.Collections.Generic.List\u00601[[VentasConcierto.Models.Sede, ConciertoVentas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -85,9 +175,35 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.ClienteController",
+    "Method": "GuardarCliente",
+    "RelativePath": "Guardar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cli",
+        "Type": "VentasConcierto.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConciertoVentas.Controllers.ClienteController",
+    "Method": "ListadoClientes",
+    "RelativePath": "Obtener",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Int32",
+        "Type": "System.Collections.Generic.List\u00601[[VentasConcierto.Models.Cliente, ConciertoVentas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

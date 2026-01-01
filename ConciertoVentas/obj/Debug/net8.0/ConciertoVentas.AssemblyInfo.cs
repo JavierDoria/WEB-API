@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConciertoVentas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+514b611e27e6df58419cf4451842dba4cb7a0c21")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConciertoVentas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConciertoVentas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,7 +5,137 @@
     "version": "1.0"
   },
   "paths": {
-    "/Cliente": {
+    "/api/boleta": {
+      "get": {
+        "tags": [
+          "Boleta"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleta"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleta"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Boleta"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Boleta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/boleta/{id}": {
+      "delete": {
+        "tags": [
+          "Boleta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Boleta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Boleta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Obtener": {
       "get": {
         "tags": [
           "Cliente"
@@ -41,7 +171,9 @@
             }
           }
         }
-      },
+      }
+    },
+    "/Guardar": {
       "post": {
         "tags": [
           "Cliente"
@@ -67,27 +199,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -109,32 +221,12 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/actualizar": {
+    "/Actualizar": {
       "put": {
         "tags": [
           "Cliente"
@@ -160,27 +252,141 @@
         },
         "responses": {
           "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sedes/Obtener": {
+      "get": {
+        "tags": [
+          "Sede"
+        ],
+        "responses": {
+          "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "integer",
-                  "format": "int32"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sede"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "integer",
-                  "format": "int32"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sede"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "integer",
-                  "format": "int32"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Sede"
+                  }
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/sedes/Guardar": {
+      "post": {
+        "tags": [
+          "Sede"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sedes/Eliminar{id}": {
+      "delete": {
+        "tags": [
+          "Sede"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sedes/Actualizar{id}": {
+      "put": {
+        "tags": [
+          "Sede"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Sede"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -227,6 +433,40 @@
   },
   "components": {
     "schemas": {
+      "Boleta": {
+        "type": "object",
+        "properties": {
+          "idBoleta": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dniCliente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreSede": {
+            "type": "string",
+            "nullable": true
+          },
+          "empresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "lugar": {
+            "type": "string",
+            "nullable": true
+          },
+          "evento": {
+            "type": "string",
+            "nullable": true
+          },
+          "costo": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "Cliente": {
         "type": "object",
         "properties": {
@@ -243,6 +483,28 @@
             "nullable": true
           },
           "dni": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sede": {
+        "type": "object",
+        "properties": {
+          "idSede": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreSede": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
             "type": "string",
             "nullable": true
           },

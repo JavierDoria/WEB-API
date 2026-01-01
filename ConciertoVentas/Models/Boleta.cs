@@ -9,7 +9,9 @@ namespace VentasConcierto.Models
     public class Boleta
     {
         public int IdBoleta {  get; set; }
-        public string NombreCliente {  get; set; }
+        public string DniCliente { get; set; } 
+        public string NombreSede { get; set; } 
+        public string Empresa {  get; set; }
         public string Lugar {  get; set; }
         public string Evento {  get; set; }
         public decimal Costo {  get; set; }

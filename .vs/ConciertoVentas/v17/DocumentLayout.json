@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\controllers\\boletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\controllers\\boletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\controllers\\sedecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\controllers\\sedecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\models\\sede.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\models\\sede.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\conciertoventas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\conciertoventas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|c:\\users\\jjjja\\desktop\\c#\\conciertoventas\\conciertoventas\\models\\boleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F217D4B0-E657-4126-94F6-2F846B6286B1}|ConciertoVentas\\ConciertoVentas.csproj|solutionrelative:conciertoventas\\models\\boleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,50 +21,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 207,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 215,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConciertoVentas.csproj",
-              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\ConciertoVentas.csproj",
-              "RelativeDocumentMoniker": "ConciertoVentas\\ConciertoVentas.csproj",
-              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\ConciertoVentas.csproj",
-              "RelativeToolTip": "ConciertoVentas\\ConciertoVentas.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-27T04:34:09.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "ConciertoVentas\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "ConciertoVentas\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T04:28:17.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ConciertoVentas\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ConciertoVentas\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T05:01:19.256Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -93,28 +43,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "ConciertoVentas\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Models\\Cliente.cs",
-              "RelativeToolTip": "ConciertoVentas\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BoletaController.cs",
+              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\BoletaController.cs",
+              "RelativeDocumentMoniker": "ConciertoVentas\\Controllers\\BoletaController.cs",
+              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\BoletaController.cs",
+              "RelativeToolTip": "ConciertoVentas\\Controllers\\BoletaController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwHMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T02:02:25.591Z",
+              "WhenOpened": "2026-01-01T02:02:21.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Boleta.cs",
-              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Models\\Boleta.cs",
-              "RelativeDocumentMoniker": "ConciertoVentas\\Models\\Boleta.cs",
-              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Models\\Boleta.cs",
-              "RelativeToolTip": "ConciertoVentas\\Models\\Boleta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SedeController.cs",
+              "DocumentMoniker": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\SedeController.cs",
+              "RelativeDocumentMoniker": "ConciertoVentas\\Controllers\\SedeController.cs",
+              "ToolTip": "C:\\Users\\jjjja\\Desktop\\c#\\ConciertoVentas\\ConciertoVentas\\Controllers\\SedeController.cs",
+              "RelativeToolTip": "ConciertoVentas\\Controllers\\SedeController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwGsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T02:02:22.621Z"
+              "WhenOpened": "2026-01-01T00:19:05.194Z",
+              "EditorCaption": ""
             }
           ]
         }
